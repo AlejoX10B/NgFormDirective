@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+
+@import 'primeng/resources/themes/lara-light-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+@import 'primeflex/primeflex.css';
+
+
+html, body, main {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+form label:has(+ input:required)::after { 
+  color: red;
+  content: "*";
+  position: absolute;
+  margin-left: 5px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+}
